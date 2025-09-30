@@ -15,7 +15,7 @@ const App: React.FunctionComponent = () => {
   const [newName, setNewName] = useState("");
   const [newDesc, setNewDesc] = useState("");
 
-  const handleAdd = () => {
+  const Addtask = () => {
     addTask(newName, newDesc);
     setNewName("");
     setNewDesc("");
@@ -38,7 +38,7 @@ const App: React.FunctionComponent = () => {
           value={newDesc}
           onChange={(e) => setNewDesc(e.target.value)}
         />
-        <button onClick={handleAdd}>Add</button>
+        <button onClick={Addtask}>Add</button>
       </div>
 
       <Tasklist
